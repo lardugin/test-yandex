@@ -1,0 +1,216 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #000;
+  background: #fff;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 span {
+  font-size: 0.7em;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 100%;
+}
+
+.my_table {
+  position: relative;
+}
+
+.my_table .left {
+  width: 149px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+* html .my_table .left {
+  left: -150px;
+}
+
+.my_table ul {
+  list-style-type: none;
+}
+
+.my_table .right {
+  margin-left: 150px;
+  position: relative;
+}
+
+.my_table ul li {
+  height: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.my_table ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.my_table table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  position: relative;  
+}
+
+.my_table table tr td {
+  text-align: center;
+  height: 30px;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+}
+
+.my_table table tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+
+.my_table_1 {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.my_table_1 .right {
+  margin-left: 150px;
+  position: relative;
+}
+
+.scroll_box {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+}
+
+* html .scroll_box {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+*:first-child+html .scroll_box {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+
+
+
+.my_table_2 .right {
+  margin-left: 150px;
+  position: relative;
+}
+
+*:first-child+html .my_table_2 .right {
+  border-bottom: 1px solid #ccc;
+}
+
+.scroll-pane {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.horizontal-only {
+  height: auto;
+}
+
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspContainer:after {
+  content: '';
+  width: 18px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: url(../images/shadow.png) right 1px repeat-y;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  z-index: 1;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: rgba(13,68,160,0.1);
+  position: relative;
+}
+
+.jspDrag {
+  background: #0D44A0;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.jspDrag:active,
+.jspDrag:hover {
+  opacity: 1;
+}
+
+.jspHorizontalBar:active,
+.jspHorizontalBar:hover {
+  
+  height: 8px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+
